@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Todo List</h2>
+    <form id="todoForm">
+      <input type="text" id="task" placeholder="Masukkan kegiatan..." required>
+      <input type="date" id="date" required>
+      <button type="submit"> + </button>
+    </form>
+
+    <!-- Filter/Search -->
+    <div class="filter-box">
+      <input type="text" id="search" placeholder="Cari kegiatan...">
+      <button id="clearAll" type="button" class="clear-btn">Hapus Semua</button>
+    </div>
+
+    <!-- Tabel daftar kegiatan -->
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Kegiatan</th>
+          <th>Tanggal</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="todoList">
+        <tr><td colspan="4" style="text-align:center;">Belum ada kegiatan</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
